@@ -1,0 +1,24 @@
+digraph unnamed {
+
+	Node0xd9cb760 [shape=record,label="{ [B0 (EXIT)]\l}"];
+	Node0xd9cb838 [shape=record,label="{ [B1]\l  1: 0\l  2: return [B1.1];\l}"];
+	Node0xd9cb838 -> Node0xd9cb760;
+	Node0xd9cb910 [shape=record,label="{ [B2]\l  1: UINT8 buf[512];\l  2: 20\l  3: int mark = 20;\l  4: scanf\l  5: [B2.4] (ImplicitCastExpr, FunctionToPointerDecay, int (*)(const char *__restrict, ...))\l  6: \"%s\"\l  7: [B2.6] (ImplicitCastExpr, ArrayToPointerDecay, char *)\l  8: [B2.7] (ImplicitCastExpr, BitCast, const char *)\l  9: buf\l 10: [B2.9] (ImplicitCastExpr, ArrayToPointerDecay, UINT8 *)\l 11: [B2.5]([B2.8], [B2.10])\l 12: buf\l 13: [B2.12] (ImplicitCastExpr, ArrayToPointerDecay, UINT8 *)\l 14: 0\l 15: [B2.13][[B2.14]]\l 16: [B2.15] (ImplicitCastExpr, LValueToRValue, UINT8)\l 17: [B2.16] (ImplicitCastExpr, IntegralCast, int)\l   T: switch [B2.17]\l}"];
+	Node0xd9cb910 -> Node0xd9cbac0;
+	Node0xd9cb910 -> Node0xd9cbc18;
+	Node0xd9cb910 -> Node0xd9cbd30;
+	Node0xd9cb910 -> Node0xd9cbf08;
+	Node0xd9cb910 -> Node0xd9cb9e8;
+	Node0xd9cb9e8 [shape=record,label="{ [B3]\ldefault:\l  1: func1\l  2: [B3.1] (ImplicitCastExpr, FunctionToPointerDecay, void (*)(int))\l  3: 3\l  4: [B3.2]([B3.3])\l}"];
+	Node0xd9cb9e8 -> Node0xd9cb838;
+	Node0xd9cbac0 [shape=record,label="{ [B4]\lcase '3':\l  1: func2\l  2: [B4.1] (ImplicitCastExpr, FunctionToPointerDecay, void (*)(char *))\l  3: buf\l  4: [B4.3] (ImplicitCastExpr, ArrayToPointerDecay, UINT8 *)\l  5: (char *)[B4.4] (CStyleCastExpr, BitCast, char *)\l  6: [B4.2]([B4.5])\l}"];
+	Node0xd9cbac0 -> Node0xd9cb9e8;
+	Node0xd9cbc18 [shape=record,label="{ [B5]\lcase '2':\l  1: func\l  2: [B5.1] (ImplicitCastExpr, FunctionToPointerDecay, void (*)(int))\l  3: 2\l  4: [B5.2]([B5.3])\l   T: break;\l}"];
+	Node0xd9cbc18 -> Node0xd9cb838;
+	Node0xd9cbd30 [shape=record,label="{ [B6]\lcase '1':\l  1: aa\l  2: [B6.1] (ImplicitCastExpr, FunctionToPointerDecay, int (*)(int))\l  3: 1\l  4: [B6.2]([B6.3])\l  5: func\l  6: [B6.5] (ImplicitCastExpr, FunctionToPointerDecay, void (*)(int))\l  7: 1\l  8: [B6.6]([B6.7])\l   T: break;\l}"];
+	Node0xd9cbd30 -> Node0xd9cb838;
+	Node0xd9cbf08 [shape=record,label="{ [B7]\lcase '0':\l  1: func\l  2: [B7.1] (ImplicitCastExpr, FunctionToPointerDecay, void (*)(int))\l  3: 0\l  4: [B7.2]([B7.3])\l  5: aab\l  6: [B7.5] (ImplicitCastExpr, FunctionToPointerDecay, int (*)(int))\l  7: 8\l  8: [B7.6]([B7.7])\l   T: break;\l}"];
+	Node0xd9cbf08 -> Node0xd9cb838;
+	Node0xd9cc480 [shape=record,label="{ [B8 (ENTRY)]\l}"];
+	Node0xd9cc480 -> Node0xd9cb910;
+}

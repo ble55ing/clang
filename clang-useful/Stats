@@ -1,0 +1,7 @@
+Script started on 2019年04月16日 星期二 16时20分20秒
+[1m[7m%[27m[1m[0m                                                                                ]2;echo@Ubuntu: ~/0lib/wyy/TheTry/try]1;..yy/TheTry/try[0m[27m[24m[J[01;32m➜  [36mtry[00m [K[?1h=[?2004hscript -f Stats[15Dclang -cc1 -I/usr/include -I/home/echo/cclang-llvm/build386/lib/clang/5.0.0/include -analyze -analyzer-checker=debug.Stats test.c > Stats[K[K     [?1l>[?2004l
+]2;clang -cc1 -I/usr/include  -analyze -analyzer-checker=debug.Stats test.c]1;clangtest.c:28:5: warning: main -> Total CFGBlocks: 9 | Unreachable CFGBlocks: 0 | Exhausted Block: no | Empty WorkList: yes
+int main()
+    ^
+1 warning generated.
+[1m[7m%[27m[1m[0m                                                                                ]2;echo@Ubuntu: ~/0lib/wyy/TheTry/try]1;..yy/TheTry/try[0m[27m[24m[J[01;32m➜  [36mtry[00m [K[?1h=[?2004h
